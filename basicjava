@@ -1,7 +1,18 @@
-class HelloWorld {
-
-	public static void main (String[] args){
-
-	    System.out.println("Hello, World!");
-	}
+// training variables, types, functions and identation.
+public class MinhaClasse {
+    
+public static void main (String []args) {
+    String primeiroNome = "Diego";
+    String segundoNome = "Ursini"; 
+    int ano = 2023;
+    ano = 2024;    //aqui atualiza a var sem colocar de novo type.
+    double altura = 1.95;
+    boolean nome = true;
+    String nomeCompleto = nomeCompleto (primeiroNome, segundoNome);
+    
+    System.out.println("Oi, "+ nomeCompleto);
+}    
+public static String nomeCompleto (String primeiroNome, String segundoNome) {
+    return "Oi, " + primeiroNome.concat(" ").concat(segundoNome);
+}
 }
